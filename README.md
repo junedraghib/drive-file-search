@@ -55,3 +55,10 @@ return [{
 }]
 
 **GET / chnagefiles**: watch for changes in file google drive and update ES Index
+
+## How to run this project
+### Run Elastic Search docker image 
+`docker run --name es01 --net elastic -p 9200:9200 -p 9300:9300 -it docker.elastic.co/elasticsearch/elasticsearch:8.1.0`
+
+### Run this spring boot application 
+
