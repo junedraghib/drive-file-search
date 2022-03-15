@@ -1,0 +1,16 @@
+html, body {
+     min-height: 100%;
+     min-width: 100%;
+}
+
+#searchcontainer, {
+    margin: 200px;
+}
+
+#search, #searchcontent{
+    padding: 20px;
+}
+
+li {
+    padding: 20px;
+}

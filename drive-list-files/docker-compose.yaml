@@ -1,0 +1,25 @@
+version: '3.2'
+
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.15.2
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+      ELASTIC_PASSWORD: changeme
+      discovery.type: single-node
+  drive-list-file:
+    container_name: drive-list-file
+    build:
+      context: docker-drive-list-file
+      dockerfile: Dockerfile
+    image: drive-list-file:latest
+    ports:
+      - 8090:8090
+    networks:
+      - drive-files-search
+  networks:
+    drive-files-search:
+      driver: bridge
