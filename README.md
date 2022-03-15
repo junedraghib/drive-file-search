@@ -13,7 +13,7 @@ content.
 - Elastic Search: to index the file contents into ES Indices and perform search effectively.
 ### 3. Processes
 
-![FLOW Diagram!](/assets/flow.png "Flow diagram")
+![FLOW Diagram!](/assests/flow.png "Flow diagram")
 
 #### 3.1 Authentication to Google Drive APIs
 Register and Retrieve Oauth2.0 client credentials to access Google Drive APIs stored access
